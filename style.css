@@ -1,48 +1,44 @@
-/* Load Inter font family */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* --- 1. COLOR VARIABLES & THEME SETUP --- */
+
 :root {
-    /* Base Colors */
-    --color-tan: #BEB69B; /* Muted Tan */
-    --color-teal: #235347; /* Deep Teal */
+    --color-tan: #BEB69B; 
+    --color-teal: #235347; 
 
-    /* Light Mode Theme Variables */
-    --color-primary: var(--color-teal); /* Accent (Teal) */
-    --color-secondary: var(--color-tan); /* Secondary/Border (Tan) */
-    --bg-color-main: #f7f9fc; /* Very Light Gray/Off-White body background */
-    --bg-color-accent: #ffffff; /* Pure White sections/cards background */
-    --text-color-default: #1f2937; /* Dark Gray - Primary Text */
-    --text-color-light: #4b5563; /* Medium Gray - Secondary Text */
+    --color-primary: var(--color-teal); 
+    --color-secondary: var(--color-tan); 
+    --bg-color-main: #f7f9fc; 
+    --bg-color-accent: #ffffff; 
+    --text-color-default: #1f2937; 
+    --text-color-light: #4b5563;
 }
 
-/* Dark Mode Definition: Applied when the JS adds the 'dark-mode' class to <body> */
+
 body.dark-mode {
-    /* Swap Primary/Secondary colors for contrast in Dark Mode */
-    --color-primary: var(--color-tan); /* Accent (Tan) */
-    --color-secondary: var(--color-teal); /* Secondary/Border (Teal) */
-    --bg-color-main: #1f2937; /* Dark Background */
-    --bg-color-accent: #2d3748; /* Darker Section Background/Cards */
-    --text-color-default: #e5e7eb; /* Light Text */
-    --text-color-light: #9ca3af; /* Muted Light Text */
+    --color-primary: var(--color-tan); 
+    --color-secondary: var(--color-teal);
+    --bg-color-main: #1f2937; 
+    --bg-color-accent: #2d3748; 
+    --text-color-default: #e5e7eb;
+    --text-color-light: #9ca3af; 
 }
 
-/* --- 2. BASE & GENERAL STYLES --- */
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-color-main); 
     color: var(--text-color-default);
-    transition: background-color 0.5s, color 0.5s; /* Smooth theme transition */
+    transition: background-color 0.5s, color 0.5s; 
 }
 
-/* Custom smooth scrolling */
+
 html {
     scroll-behavior: smooth;
 }
 
-/* --- 3. COMPONENT STYLES --- */
 
-/* Text & Color Classes */
+
 .accent-text { color: var(--color-primary); }
 .text-color-default { color: var(--text-color-default); }
 .text-color-light { color: var(--text-color-light); }
@@ -50,24 +46,24 @@ html {
 .color-secondary-bg { background-color: var(--color-secondary); }
 .color-primary-bg-text-light { 
     background-color: var(--color-primary); 
-    color: var(--bg-color-accent); /* Use light text on dark primary background */
+    color: var(--bg-color-accent); 
 }
 
-/* Header */
+
 .header-fixed {
     backdrop-filter: blur(10px);
-    /* Use transparent accent color */
+    
     background-color: color-mix(in srgb, var(--bg-color-accent) 90%, transparent); 
     border-bottom: 1px solid var(--color-secondary);
 }
 
-/* Navigation Links Hover Effect */
+
 .nav-link:hover {
     color: var(--color-primary);
 }
 
 
-/* Buttons */
+
 .btn-primary {
     display: inline-flex; 
     justify-content: center; 
@@ -106,7 +102,7 @@ html {
 }
 
 
-/* Cards & Components */
+
 .card {
     background-color: var(--bg-color-accent);
     border-top: 4px solid var(--color-primary);
@@ -117,37 +113,35 @@ body.dark-mode .card {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
 }
 
-/* Profile Image Styling (New/Updated) */
-/* NEW CSS FOR CIRCULAR IMAGE */
-/* Profile Image Styling */
+
 .profile-container {
-    /* Make the inner container a perfect circle and hide overflow */
+   
     width: 100%; 
     height: 100%; 
-    border-radius: 50%; /* Make it perfectly circular */
+    border-radius: 50%; 
     overflow: hidden; 
     
-    /* Style for the outer ring effect */
+
     border: 6px solid var(--color-primary);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* The actual image element */
+
 .profile-image {
-    /* Make the image fill its circular container */
+
     width: 100%; 
     height: 100%; 
-    /* Ensures the image covers the container without being stretched, cropping as needed */
+
     object-fit: cover; 
     
-    /* Ensure the image is also circular (though overflow: hidden on the parent does most of the work) */
+
     border-radius: 50%; 
-    display: block; /* Removes any potential extra space below the image */
+    display: block; 
 }
 
-/* Dark mode border adjustments for the outer ring */
+
 body.dark-mode .profile-container {
-    border: 6px solid var(--color-primary); /* Keeps the accent color in dark mode */
+    border: 6px solid var(--color-primary); 
 }
 
 
@@ -161,7 +155,7 @@ body.dark-mode .profile-container {
     color: var(--color-primary);
 }
 
-/* Contact Form Input */
+
 .form-input {
     width: 100%; 
     padding: 0.75rem 1rem; 
@@ -178,7 +172,7 @@ body.dark-mode .profile-container {
     box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 30%, transparent);
 }
 
-/* Social Icons */
+
 .social-icon {
     color: var(--text-color-light);
     transition: color 0.3s, transform 0.3s;
@@ -196,9 +190,9 @@ body.dark-mode .profile-container {
     color: var(--bg-color-accent);
 }
 
-/* Code Block Styling - Uses atom-one-dark from highlight.js, ensure text is light */
+
 .code-block {
-    /* Background from atom-one-dark theme */
+
     background-color: #282c34; 
     color: #abb2bf; 
     padding: 1rem;
