@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erryka Garcia - Professional Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="header-fixed fixed top-0 left-0 w-full z-10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold accent-text nav-link" data-section-id="home">Erryka G.</a> 
+            
+            <div class="flex items-center space-x-4 md:space-x-8">
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="transition duration-300 font-medium text-color-default nav-link" data-section-id="home">Home</a>
+                    <a href="#about" class="transition duration-300 font-medium text-color-default nav-link" data-section-id="about">About</a>
+                    <a href="#projects" class="transition duration-300 font-medium text-color-default nav-link" data-section-id="projects">Projects</a>
+                    <a href="#contact" class="transition duration-300 font-medium text-color-default nav-link" data-section-id="contact">Contact</a>
+                </div>
+
+                <button id="theme-toggle" class="p-2 rounded-full transition duration-300 hover:bg-gray-100 dark:hover:bg-gray-700 accent-text" aria-label="Toggle Dark/Light Mode">
+                    <svg id="moon-icon" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                    <svg id="sun-icon" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </button>
+
+                <button id="mobile-menu-button" class="md:hidden transition duration-300 accent-text">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div id="mobile-menu" class="fixed top-16 left-0 w-full shadow-md z-10 md:hidden hidden section-background">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
+            <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-color-default hover:text-color-primary nav-link" data-section-id="home">Home</a>
+            <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-color-default hover:text-color-primary nav-link" data-section-id="about">About</a>
+            <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-color-default hover:text-color-primary nav-link" data-section-id="projects">Projects</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-color-default hover:text-color-primary nav-link" data-section-id="contact">Contact</a>
+        </div>
+    </div>
+
+
+    <main>
+        <section id="home" class="min-h-screen pt-24 flex items-center justify-center text-center px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 py-16">
+                <div class="md:w-1/2 text-left">
+                    <p class="text-xl text-color-light mb-2">Hello World!</p>
+                    <h1 class="text-6xl font-extrabold leading-tight mb-4 text-color-default">
+                        I'm <span class="accent-text">Erryka Garcia</span>.
+                    </h1>
+                    <h2 class="text-3xl font-semibold mb-6 text-color-light">
+                        Frontend Developer & UX Enthusiast.
+                    </h2>
+                    <p class="text-lg mb-8 max-w-lg text-color-light">
+                        I build modern, responsive web applications with clean UI and smooth UX blending design and code to create experiences that feel intuitive, fast, and delightful to use.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="garcia_erryka_cv.pdf.pdf" target="_blank" class="btn-primary">
+                            View my CV
+                        </a>
+                    </div>
+                    
+                    <div class="flex space-x-6 mt-8">
+                        <a href="https://www.instagram.com/kaiiirry?igsh=MXVkeDl0aXliNDUwMg==" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://m.me/erryka.garcia" target="_blank" class="social-icon" aria-label="Facebook Messenger">
+                            <i class="fab fa-facebook-messenger fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/pham-dham" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        <a href="mailto:errykagarcia16@gmail.com" class="social-icon" aria-label="Gmail">
+                            <i class="fas fa-envelope fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full shadow-2xl transform transition duration-500 hover:scale-105 profile-circle">
+
+                        <div class="profile-container">
+                            <img src="MyFormal.jpg" alt="Erryka Garcia Formal Profile Picture" class="profile-image"/>
+                        </div> 
+                        </div> 
+                </div>
+                
+            </div>
+        </section>
+        
+        <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 section-background min-h-screen pt-24 hidden">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-center mb-12 accent-text">About Me</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div class="p-8 rounded-xl shadow-lg card">
+                        <h3 class="text-2xl font-bold mb-4 accent-text">Who I Am</h3>
+                        <p class="leading-relaxed text-color-light mb-6">
+                            I'm a frontend developer who crafts responsive, interactive, and clean UIs. With a background in Informatics Engineering, I blend design sense with technical logic to deliver seamless digital experiences.
+                        </p>
+                        
+                        <h4 class="text-xl font-bold mb-4 text-color-default">My Daily Life</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="Hobby1.jpg" alt="Hobby 1" class="w-full h-72 object-cover rounded-lg shadow-md">
+                            <img src="Hobby2.jpg" alt="Hobby 2" class="w-full h-72 object-cover rounded-lg shadow-md">
+                            <img src="Hobby3.jpg" alt="Hobby 3" class="w-full h-72 object-cover rounded-lg shadow-md">
+                            <img src="Hobby4.jpg" alt="Hobby 4" class="w-full h-72 object-cover rounded-lg shadow-md">
+                            <img src="Hobby5.jpg" alt="Hobby 5" class="w-full h-72 object-cover rounded-lg shadow-md">
+                        </div>
+                        <p class="mt-4 text-sm text-color-light/70 italic">
+                            (Note: Please replace 'placeholder-*.jpg' with your actual image paths and file names.)
+                        </p>
+                    </div>
+                    
+                    <div class="p-8 rounded-xl shadow-lg card">
+                        <h3 class="text-2xl font-bold mb-4 accent-text text-center">Explored Languages</h3>
+                        <p class="leading-relaxed mb-4 text-color-light">
+                            My technical foundation includes core programming and web development languages, providing a versatile skill set:
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="language-badge">Python</span>
+                            <span class="language-badge">Java</span>
+                            <span class="language-badge">JavaScript</span>
+                            <span class="language-badge">C</span>
+                            <span class="language-badge">HTML</span>
+                            <span class="language-badge">CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 min-h-screen pt-24 hidden">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-center mb-12 accent-text">Featured Projects</h2>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 card">
+                        <div class="p-6">
+                            <span class="project-tag">C, Structs, Functions</span>
+                            <h3 class="text-xl font-bold mb-2 accent-text flex items-center">
+                                Student Grading System (C)
+                            </h3>
+                            <p class="mb-4 text-color-light">A C program utilizing structures and functions to calculate total marks, average, and letter grades for multiple students.</p>
+                            
+                            <h4 class="font-bold mb-2 mt-4 text-color-default">Code Snippet:</h4>
+                            <div class="code-block">
+                                <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+struct Student {
+    char name[50];
+    int marks[3];
+    int total;
+};
+// ... (Code Snippet)
+                                </code></pre>
+                            </div>
+                            </div>
+                    </div>
+                    
+                    <div class="rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 card">
+                        <div class="p-6">
+                            <span class="project-tag">Java, Method Overloading</span>
+                            <h3 class="text-xl font-bold mb-2 accent-text flex items-center">
+                                Form Letter Writer (Java)
+                            </h3>
+                            <p class="mb-4 text-color-light">A simple Java application demonstrating polymorphism through method overloading for generating personalized and formal salutations.</p>
+                            
+                            <h4 class="font-bold mb-2 mt-4 text-color-default">Code Snippet:</h4>
+                            <div class="code-block">
+                                <pre><code class="language-java">
+package formletterwriter;
+public class FormLetterWriter {
+    public void displaySalutation(String lastName) {
+        System.out.println("Dear Mr./Ms. " + lastName + ",");
+    }
+    // ... (Code Snippet)
+}
+                                </code></pre>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 card">
+                        <div class="p-6">
+                            <span class="project-tag">Python, Data Structures</span>
+                            <h3 class="text-xl font-bold mb-2 accent-text flex items-center">
+                                Circular Playlist (Python)
+                            </h3>
+                            <p class="mb-4 text-color-light">Implementation of a Doubly Linked Circular List to simulate a music player, allowing continuous forward and backward track movement.</p>
+                            
+                            <h4 class="font-bold mb-2 mt-4 text-color-default">Code Snippet:</h4>
+                            <div class="code-block">
+                                <pre><code class="language-python">
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        self.prev = None
+// ... (Code Snippet)
+                                </code></pre>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 color-secondary-bg min-h-screen pt-24 hidden">
+            <div class="max-w-xl mx-auto text-center">
+                <h2 class="text-4xl font-extrabold mb-4 accent-text">Get In Touch</h2>
+                <p class="text-lg mb-10 text-color-default">
+                    Reach out via the form below or connect with me through social media. I'm always open to new projects and opportunities!
+                </p>
+
+                <div class="mb-8 p-6 rounded-xl shadow-lg section-background">
+                    <p class="text-xl font-semibold mb-4 text-color-default">Direct Contact</p>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-center text-color-light">
+                            <i class="fas fa-envelope mr-3 accent-text"></i>
+                            <span class="font-medium">Email:</span>
+                            <a href="mailto:errykagarcia16@gmail.com" class="ml-2 hover:text-color-primary">errykagarcia16@gmail.com</a>
+                        </div>
+                        <div class="flex items-center justify-center text-color-light">
+                            <i class="fab fa-github mr-3 accent-text"></i>
+                            <span class="font-medium">GitHub:</span>
+                            <a href="https://github.com/pham-dham" target="_blank" class="ml-2 hover:text-color-primary">pham-dham</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <form class="space-y-6 p-8 rounded-xl shadow-xl section-background">
+                    <div>
+                        <input type="text" placeholder="Your Name" class="form-input" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" class="form-input" required>
+                    </div>
+                    <div>
+                        <textarea placeholder="Your Message" rows="4" class="form-input" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-10 px-4 sm:px-6 lg:px-8 color-primary-bg-text-light">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center">
+            <p class="mb-4 md:mb-0 text-sm opacity-80">&copy; 2024 Erryka Garcia. All rights reserved.</p>
+            
+            <div class="flex space-x-6">
+                <a href="https://www.instagram.com/kaiiirry?igsh=MXVkeDl0aXliNDUwMg==" target="_blank" class="footer-social-icon opacity-80 hover:opacity-100 transition" aria-label="Instagram">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a href="https://m.me/erryka.garcia" target="_blank" class="footer-social-icon opacity-80 hover:opacity-100 transition" aria-label="Facebook Messenger">
+                    <i class="fab fa-facebook-messenger fa-lg"></i>
+                </a>
+                <a href="https://github.com/pham-dham" target="_blank" class="footer-social-icon opacity-80 hover:opacity-100 transition" aria-label="GitHub">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="mailto:errykagarcia16@gmail.com" class="footer-social-icon opacity-80 hover:opacity-100 transition" aria-label="Gmail">
+                    <i class="fas fa-envelope fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script src="Script.js"></script>
+</body>
+</html>
